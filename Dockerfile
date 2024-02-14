@@ -6,7 +6,7 @@ COPY package.json ./
 COPY npm-shrinkwrap.json ./
 COPY .npmrc ./
 
-RUN npm install --global npm@10.4.0
+RUN npm install --global npm@latest-2
 RUN npm ci
 
 COPY .*.js ./
